@@ -1,7 +1,11 @@
 
 var currentNumberWrapper = document.getElementById('currentNumber');
+var mais = document.getElementById('mais');
+var menos = document.getElementById('menos');
 var currentNumber = 0;
 
+mais.addEventListener("click", increment());
+menos.addEventListener("click", decrement());
 
 function decrement(){
     if(currentNumber === -10){
